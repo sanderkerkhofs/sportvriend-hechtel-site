@@ -21,13 +21,20 @@ Dit project werd gemaakt als onderdeel van Opdracht 2 voor het vak Front-End Dev
 - **Fotogalerij** met clubactiviteiten en evenementen
 - **Toegankelijke structuur** met semantisch correcte HTML
 
-## 🛠️ Technologieën
+> 💡 Voor een gedetailleerd technisch overzicht van alle functionaliteiten, zie [FEATURES.md](FEATURES.md)
 
-- HTML5
-- CSS3 (Flexbox, Grid)
-- Moderne web design technieken
-- Responsive design principles
-- CRAP-principes (Contrast, Repetition, Alignment, Proximity)
+## 🛠️ Technologieën & Technieken
+
+- **HTML5** met semantische structuur
+- **CSS3** met geavanceerde technieken:
+  - Flexbox voor flexibele layouts
+  - CSS Grid voor complexere pagina-indelingen
+  - Custom properties (CSS variabelen) voor consistente styling
+  - Media queries voor responsief ontwerp
+- **Font Awesome** voor iconografie (versie 6.5.1)
+- **Responsive design** met mobile-first benadering
+- **CRAP-principes** (Contrast, Repetition, Alignment, Proximity)
+- **CSS-animaties** en visuele effecten (bij popups in de fotogalerij)
 
 ## 📁 Projectstructuur
 
@@ -38,66 +45,166 @@ sportvriend-hechtel-site/
 ├── over-ons.html          # Informatie over de club, geschiedenis en team
 ├── fotos.html             # Fotogalerij met clubactiviteiten
 ├── contact.html           # Contactformulier en contactgegevens
-├── styles.css             # Alle styling voor de website
+├── styles.css             # Hoofdstijlbestand met 900+ regels CSS
+├── gallery.css            # Specifieke CSS voor de fotogalerij en popup functionaliteit
 ├── README.md              # Project documentatie
+├── opdracht2.md           # Opdrachtbeschrijving
 └── img/                   # Map met alle afbeeldingen
     ├── SVH-logo.png       # Club logo
     ├── match1.jpg         # Wedstrijdfoto's
-    ├── match2.jpg
+    ├── match2.jpg         # Wedstrijdfoto's
     ├── seizoen2014.jpg    # Teamfoto's
-    ├── seizoen2018.jpg
-    ├── seizoen2020.jpg
-    └── ...                # Overige afbeeldingen
+    ├── seizoen2018.jpg    # Teamfoto's
+    ├── seizoen2020.jpg    # Teamfoto's
+    ├── map.PNG            # Kaart voor contactpagina
+    ├── BBQ2.JPG           # Event foto's
+    ├── kerstmarkt1.jpg    # Event foto's
+    ├── toernoei-mille-*.jpg # Toernooi foto's
+    ├── sponsor-*.jpg      # Sponsorfoto's
+    └── uitstap2.jpg       # Uitstap foto's
 ```
 
 ## 📱 Responsief Design
 
-De website is volledig responsief en biedt een optimale gebruikerservaring op verschillende apparaten:
-- **Mobiel**: Compacte weergave met hamburger menu
-- **Tablet**: Aangepaste layouts voor middelgrote schermen
-- **Desktop**: Volledige layout met ruimere weergave
+De website is volledig responsief met CSS media queries op verschillende breekpunten en biedt een optimale gebruikerservaring op diverse apparaten:
 
-## ✨ Designprincipes
+- **Mobiel (< 480px)**: 
+  - Compacte weergave
+  - Verticaal gestapelde navigatie
+  - Vereenvoudigde layouts met één kolom
+  - Kleinere tekstgrootte en padding voor efficiënt ruimtegebruik
 
-Bij het ontwikkelen van deze website zijn de volgende designprincipes toegepast:
-- **Contrast**: Gebruik van clubkleuren (groen en geel) tegen lichte achtergrond
-- **Repetition**: Consistente styling en kleuren door de hele site
-- **Alignment**: Gestructureerde layout voor betere leesbaarheid
-- **Proximity**: Gerelateerde elementen gegroepeerd voor duidelijke informatiehiërarchie
+- **Tablet (480px - 768px)**:
+  - Aangepaste layouts voor middelgrote schermen
+  - Verbeterde typografie en spacing
+  - Geoptimaliseerde grid-indelingen (2 kolommen)
+
+- **Kleinere desktop (768px - 1024px)**:
+  - Flexibele containers
+  - Meer white space
+  - Verbeterde tabelweergave
+
+- **Desktop (> 1024px)**:
+  - Volledige layout met ruimere weergave
+  - Maximale containerbreedte van 1200px
+  - Optimale leesafstanden en interactieve elementen
+
+## ✨ Designprincipes & UI Features
+
+Bij het ontwikkelen van deze website zijn de CRAP-designprincipes consequent toegepast:
+
+- **Contrast**: 
+  - Gebruik van clubkleuren (donkergroen en geel) tegen lichte achtergronden
+  - Hoog contrast voor betere leesbaarheid en visuele hiërarchie
+  - Duidelijke kleurcodering voor belangrijke elementen (knoppen, links, headers)
+
+- **Repetition**: 
+  - Consistente styling en kleuren door de hele website
+  - Herhaald gebruik van iconografie en typografie
+  - Uniforme componentenstijlen (knoppen, formulierelementen, tabellen)
+  - CSS variabelen voor kleurconsistentie en herbruikbaarheid
+
+- **Alignment**: 
+  - Gestructureerde grid-gebaseerde layout voor betere leesbaarheid
+  - Consistente marges en paddings door gebruik van CSS variabelen
+  - Zorgvuldige uitlijning van elementen binnen secties
+  - Responsieve uitlijning die zich aanpast aan verschillende schermformaten
+
+- **Proximity**: 
+  - Logische groepering van gerelateerde elementen
+  - Duidelijke informatiehiërarchie door ruimtelijke ordening
+  - Visueel gescheiden secties met passende witruimte
+  - Intuïtieve navigatiestructuur
 
 ## 🧪 Validatie & Toegankelijkheid
 
-- HTML gevalideerd volgens W3C-standaarden
-- CSS gevalideerd volgens W3C-standaarden
-- Toegankelijk met gebruik van semantische HTML-elementen
-- Alt-teksten voor afbeeldingen
+### HTML & CSS Validatie
+- HTML gevalideerd volgens W3C HTML5-standaarden
+- CSS gevalideerd volgens W3C CSS3-standaarden
+- Foutloos bij controle via validatietools
 
-## 📚 Leerdoelen
+### Toegankelijkheid
+- Semantische HTML5-structuur voor betere assistive technology ondersteuning
+- Duidelijke, beschrijvende alt-teksten voor alle afbeeldingen
+- Toegankelijke formulierelementen met gekoppelde labels
+- Voldoende kleurcontrast volgens WCAG-richtlijnen
+- Logische focus-volgorde voor toetsenbordnavigatie
+- Correct gebruik van headers voor documentstructuur (h1-h6)
+- ARIA-attributen waar nodig voor verbeterde toegankelijkheid
 
-Dit project demonstreert beheersing van:
-- Correct gebruik van HTML-structuren
-- Moderne CSS-technieken zonder gebruik van frameworks
-- Responsieve layouts voor diverse schermformaten
-- Visueel aantrekkelijk design met goede typografie
-- Toegepasde CRAP-principes in webdesign
+### Browsercompatibiliteit
+- Getest in moderne browsers (Chrome, Firefox, Edge, Safari)
+- Fallback-styling voor oudere browsers
+- Consistente weergave op alle geteste platforms
+
+## 📚 Leerdoelen & Toegepaste Vaardigheden
+
+Dit project demonstreert beheersing van meerdere front-end vaardigheden:
+
+### HTML Beheersing
+- Correct gebruik van semantische HTML5-elementen (header, nav, main, section, footer)
+- Goed gestructureerde documentopbouw en hiërarchie
+- Formuliervalidatie en -opmaak met relevante veldtypen
+- Tabellen voor gestructureerde data (wedstrijdkalender)
+- Correcte integratie van externe bronnen (Font Awesome)
+
+### CSS Expertise
+- Geavanceerde selectors en specificiteitsbeheer
+- CSS-variabelen (custom properties) voor consistente styling
+- Flexbox voor één-dimensionale layouts
+- CSS Grid voor complexe twee-dimensionale layouts
+- Responsieve media queries op meerdere breekpunten
+- Effectieve CSS-organisatie met commentaar en secties
+- CSS-animaties en -transities voor visuele feedback
+
+### Responsief Design
+- Mobile-first benadering met progressieve verbetering
+- Adaptieve layouts die zich aanpassen aan diverse schermformaten
+- Responsieve typografie en afbeeldingen
+- Efficiënt ruimtegebruik op kleinere schermen
+
+### UI/UX Principes
+- Consistente visuele taal door de hele website
+- Intuïtieve navigatie en gebruikersinterface
+- Effectieve visuele hiërarchie en informatiestructuur
+- Toepassing van CRAP-principes in alle aspecten van het ontwerp
+- Gebruiksvriendelijke interactieve elementen (formulieren, fotogalerij)
 
 ## 🏆 Over de Club
 
-Sportvriend Hechtel is een lokale voetbalclub opgericht in 1974 in Hechtel, Limburg. De club staat bekend om zijn vriendschappelijke sfeer, gemeenschapszin, en passie voor voetbal. Met verschillende teams en activiteiten biedt de club sportieve mogelijkheden voor alle leeftijden.
+Sportvriend Hechtel is een lokale veteranenvoetbalclub uit het Limburgse Hechtel. De club ontstond in 2023 uit de fusie van twee historische clubs: Sportvriend 74 (opgericht in 1974) en KWB 76 (opgericht in 1976). De club staat bekend om zijn vriendschappelijke sfeer, gemeenschapszin, en passie voor voetbal.
 
-## 📷 Schermafbeeldingen
+### Kernwaarden
+De club hanteert een duidelijke filosofie met focus op:
+- Sportiviteit en fair play
+- Teamspirit en vriendschap
+- Gemeenschapsbetrokkenheid
+- Inclusiviteit en toegankelijkheid
+- Plezier boven prestatie
 
-![Homepage](img/screenshot-home.png)
-*Homepage met nieuws en wedstrijdkalender*
+De thuisbasis van de club ligt in het groene hart van Hechtel, waar ze regelmatig wedstrijden, trainingen en sociale activiteiten organiseren. De club is meer dan alleen voetbal - het is een social hub voor de lokale gemeenschap.
 
-![Over Ons Pagina](img/screenshot-over-ons.png)
-*Over Ons pagina met clubgeschiedenis*
+## 📷 Projectvoorbeelden
+
+De website bevat diverse secties en pagina's:
+
+### Thuispagina (index.html)
+De homepage bevat een welkomsttekst, een wedstrijdkalender en recente nieuwsberichten over de club.
+
+### Over Ons (over-ons.html) 
+De "Over Ons" pagina bevat informatie over de clubgeschiedenis, de fusie van Sportvriend 74 en KWB 76 in 2023, en de kernwaarden van de club. De pagina bevat teamfoto's en beschrijft de clubcultuur.
+
+### Fotogalerij (fotos.html)
+Een interactieve fotogalerij met afbeeldingen van wedstrijden, teamfoto's en club-evenementen. De galerij gebruikt een popup-systeem met modern CSS voor een betere gebruikerservaring.
+
+### Contact (contact.html)
+Een contactpagina met contactgegevens, een formulier voor bezoekers en een kaart met de locatie van het clubterrein.
 
 ## 📝 Contactgegevens
 
-- **Adres**: Sportlaan 10, 3940 Hechtel
+- **Adres**: Hoefstraat 4, 3940 Hechtel
 - **Email**: info@sportvriend-hechtel.be
-- **Facebook**: [Sportvriend Hechtel Facebook](https://www.facebook.com/groups/1172632327326650/)
+- **Telefoon**: 0470 12 34 56
 
 ---
 
