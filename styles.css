@@ -90,6 +90,8 @@ nav a {
     padding: var(--spacing-xs) var(--spacing-sm);
     border-radius: 4px;
     text-transform: uppercase;
+    transition: all 0.3s ease;
+    display: inline-block;
 }
 
 nav a:hover, nav a.active {
@@ -841,6 +843,20 @@ footer {
     
     nav ul {
         gap: var(--spacing-sm);
+    }
+    
+    /* Make nav items stack vertically */
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: var(--spacing-xs);
+    }
+    
+    nav a {
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: var(--spacing-xs) var(--spacing-md);
     }
     
     .contact-grid {
