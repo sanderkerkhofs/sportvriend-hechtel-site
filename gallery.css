@@ -4,6 +4,104 @@
  * Datum: Juni 2025 
  */
 
+/* Album Filter */
+.album-filter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--spacing-xs);
+    list-style: none;
+    margin-bottom: var(--spacing-md);
+    margin-top: var(--spacing-sm);
+}
+
+.album-filter button {
+    background: none;
+    border: 1px solid var(--primary);
+    color: var(--primary);
+    padding: var(--spacing-xs) var(--spacing-sm);
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.album-filter button:hover, 
+.album-filter button.active {
+    background-color: var(--primary);
+    color: var(--text-light);
+}
+
+/* Gallery grid layout */
+.gallery-container,
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: var(--spacing-md);
+    max-width: var(--container-width);
+    margin: 0 auto;
+}
+
+/* Gallery item styling */
+.gallery-item {
+    position: relative;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.gallery-item:hover {
+    transform: translateY(-5px);
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05);
+}
+
+.gallery-item a {
+    display: block;
+    text-decoration: none;
+    color: var(--text-dark);
+    position: relative;
+}
+
+/* Gallery images */
+.gallery-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+/* Gallery captions */
+.gallery-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: var(--text-light);
+    padding: var(--spacing-sm);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.gallery-item:hover .gallery-caption {
+    opacity: 1;
+}
+
+.gallery-caption h4 {
+    margin-bottom: var(--spacing-xs);
+}
+
+.gallery-caption p {
+    font-size: 0.9rem;
+    margin-bottom: 0;
+}
+
 /* Popup Image Gallery */
 .popup-gallery {
     position: fixed;
@@ -98,34 +196,104 @@
     transform: scale(1.1);
 }
 
-/* Change gallery item to link for clicking */
-.gallery-item {
-    cursor: pointer;
-    overflow: hidden;
-}
-
-/* Add keyboard accessibility focus indicator */
+/* Accessibility enhancements */
 .gallery-item a:focus {
     outline: 3px solid var(--secondary);
     outline-offset: 3px;
 }
 
-/* Make sure image thumbnails are consistent size */
-.gallery-item img {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-    transition: transform 0.4s ease;
-}
-
-/* Accessibility enhancement for keyboard users */
 .popup-close:focus,
 .popup-background:focus {
     outline: 2px solid white;
     outline-offset: 2px;
 }
 
-/* Improve accessibility by showing focus states */
 .popup-gallery:target .popup-content {
     z-index: 1000;
+}
+
+/* Navigation controls for popup gallery */
+.popup-nav {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    transform: translateY(-50%);
+}
+
+.popup-prev,
+.popup-next {
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 20px;
+    transition: background 0.3s ease;
+}
+
+.popup-prev:hover,
+.popup-next:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.popup-prev:focus,
+.popup-next:focus {
+    outline: 2px solid white;
+    outline-offset: 2px;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .gallery-container,
+    .gallery-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: var(--spacing-sm);
+    }
+    
+    .popup-close {
+        top: -30px;
+        right: -10px;
+    }
+    
+    .popup-caption {
+        font-size: 0.9rem;
+    }
+
+    .album-filter {
+        flex-direction: column;
+        align-items: center;
+        gap: var(--spacing-xs);
+        margin: var(--spacing-sm) auto;
+        max-width: 80%;
+    }
+
+    .album-filter button {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .gallery-container,
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .gallery-item img {
+        height: 200px;
+    }
+    
+    .popup-content {
+        width: 95%;
+    }
+    
+    .popup-nav {
+        padding: 0 5px;
+    }
 }
