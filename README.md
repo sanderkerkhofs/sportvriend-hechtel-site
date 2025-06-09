@@ -1,4 +1,4 @@
-# Sportvriend Hechtel - Voetbalclub Website
+# 📱 Sportvriend Hechtel - Voetbalclub Website
 
 ![Sportvriend Hechtel Logo](img/SVH-logo.png)
 
@@ -7,7 +7,7 @@
 Deze website werd ontwikkeld als onderdeel van de cursus **Front-End Development** aan **UCLL**. Het betreft een statische website voor de lokale voetbalclub "Sportvriend Hechtel" uit Limburg, België. De site biedt informatie over de club, het team, activiteiten, wedstrijden en contactmogelijkheden.
 
 ### Schoolopdracht Context
- 
+
 Dit project werd gemaakt als onderdeel van Opdracht 2 voor het vak Front-End Development (Semester 2). De opdracht vereiste het ontwikkelen van een volledig responsieve, statische website met minimaal vier pagina's, zonder gebruik van frameworks, met toegepaste moderne CSS-technieken.
 
 ## 🚀 Functies
@@ -20,8 +20,6 @@ Dit project werd gemaakt als onderdeel van Opdracht 2 voor het vak Front-End Dev
 - **Wedstrijdkalender** met aankomende wedstrijden
 - **Fotogalerij** met clubactiviteiten en evenementen
 - **Toegankelijke structuur** met semantisch correcte HTML
-
-> 💡 Voor een gedetailleerd technisch overzicht van alle functionaliteiten, zie [FEATURES.md](FEATURES.md)
 
 ## 🛠️ Technologieën & Technieken
 
@@ -48,7 +46,6 @@ sportvriend-hechtel-site/
 ├── styles.css             # Hoofdstijlbestand met 900+ regels CSS
 ├── gallery.css            # Specifieke CSS voor de fotogalerij en popup functionaliteit
 ├── README.md              # Project documentatie
-├── opdracht2.md           # Opdrachtbeschrijving
 └── img/                   # Map met alle afbeeldingen
     ├── SVH-logo.png       # Club logo
     ├── match1.jpg         # Wedstrijdfoto's
@@ -66,109 +63,95 @@ sportvriend-hechtel-site/
 
 ## 📱 Responsief Design
 
-De website is volledig responsief met CSS media queries op verschillende breekpunten en biedt een optimale gebruikerservaring op diverse apparaten:
+De website is volledig responsief met CSS media queries op verschillende breekpunten:
 
-- **Mobiel (< 480px)**: 
-  - Compacte weergave
-  - Verticaal gestapelde navigatie
-  - Vereenvoudigde layouts met één kolom
-  - Kleinere tekstgrootte en padding voor efficiënt ruimtegebruik
+- **Mobiel (< 480px)** 
+  - Compacte weergave met verticale navigatie
+  - Één-koloms layout voor optimale leesbaarheid
+  - Aangepaste afbeeldingsgroottes voor snellere laadtijden
+  - Hamburger menu voor betere gebruikservaring
 
-- **Tablet (480px - 768px)**:
-  - Aangepaste layouts voor middelgrote schermen
-  - Verbeterde typografie en spacing
-  - Geoptimaliseerde grid-indelingen (2 kolommen)
+- **Tablet (480px - 768px)**
+  - Twee-koloms layouts waar mogelijk
+  - Geoptimaliseerde tekst en afbeeldingen
+  - Verbeterde navigatie met meer ruimte
 
-- **Kleinere desktop (768px - 1024px)**:
-  - Flexibele containers
-  - Meer white space
-  - Verbeterde tabelweergave
+- **Kleinere desktop (768px - 1024px)**
+  - Drie-koloms layouts voor fotogalerij
+  - Gemaximaliseerde inhoud voor betere leesbaarheid
+  - Volledige navigatie
 
-- **Desktop (> 1024px)**:
-  - Volledige layout met ruimere weergave
+- **Desktop (> 1024px)**
+  - Volledige site-ervaring met ruime whitespace
+  - Interactieve hover-effecten
   - Maximale containerbreedte van 1200px
-  - Optimale leesafstanden en interactieve elementen
 
-## ✨ Designprincipes & UI Features
+## 🎨 Design Kenmerken
 
-Bij het ontwikkelen van deze website zijn de CRAP-designprincipes consequent toegepast:
+### Kleurenpalet
+- **Primaire kleuren**: Donkergroen (#1e5631) en geel (#f8c91e) van clublogo
+- **Secundaire kleuren**: Wit, lichtgrijs en zwart voor inhoud en contrast
+- **Accentkleuren**: Verschillende tinten groen voor visuele hiërarchie
 
-- **Contrast**: 
-  - Gebruik van clubkleuren (donkergroen en geel) tegen lichte achtergronden
-  - Hoog contrast voor betere leesbaarheid en visuele hiërarchie
-  - Duidelijke kleurcodering voor belangrijke elementen (knoppen, links, headers)
+### Typografie
+- Sans-serif fonts voor goede leesbaarheid op alle apparaten
+- Duidelijke hiërarchie met verschillende groottes en gewichten
+- Consistente regelafstand en tekstuitlijning
 
-- **Repetition**: 
-  - Consistente styling en kleuren door de hele website
-  - Herhaald gebruik van iconografie en typografie
-  - Uniforme componentenstijlen (knoppen, formulierelementen, tabellen)
-  - CSS variabelen voor kleurconsistentie en herbruikbaarheid
+### UI Componenten
+- Uniforme knoppen met hover-effecten
+- Responsieve tabellen voor wedstrijdinformatie
+- Interactieve fotogalerij met popup-functionaliteit
+- Formulierelementen met visuele feedback
 
-- **Alignment**: 
-  - Gestructureerde grid-gebaseerde layout voor betere leesbaarheid
-  - Consistente marges en paddings door gebruik van CSS variabelen
-  - Zorgvuldige uitlijning van elementen binnen secties
-  - Responsieve uitlijning die zich aanpast aan verschillende schermformaten
+## 🧪 Toegankelijkheid & Best Practices
 
-- **Proximity**: 
-  - Logische groepering van gerelateerde elementen
-  - Duidelijke informatiehiërarchie door ruimtelijke ordening
-  - Visueel gescheiden secties met passende witruimte
-  - Intuïtieve navigatiestructuur
-
-## 🧪 Validatie & Toegankelijkheid
-
-### HTML & CSS Validatie
-- HTML gevalideerd volgens W3C HTML5-standaarden
-- CSS gevalideerd volgens W3C CSS3-standaarden
-- Foutloos bij controle via validatietools
-
-### Toegankelijkheid
-- Semantische HTML5-structuur voor betere assistive technology ondersteuning
-- Duidelijke, beschrijvende alt-teksten voor alle afbeeldingen
-- Toegankelijke formulierelementen met gekoppelde labels
+- Semantische HTML5-elementen voor verbeterde toegankelijkheid
+- Alt-teksten voor alle afbeeldingen
+- ARIA-attributen waar nodig
+- Toetsenbordnavigatie ondersteund
 - Voldoende kleurcontrast volgens WCAG-richtlijnen
-- Logische focus-volgorde voor toetsenbordnavigatie
-- Correct gebruik van headers voor documentstructuur (h1-h6)
-- ARIA-attributen waar nodig voor verbeterde toegankelijkheid
-
-### Browsercompatibiliteit
+- Gevalideerde HTML en CSS volgens W3C-standaarden
 - Getest in moderne browsers (Chrome, Firefox, Edge, Safari)
 - Fallback-styling voor oudere browsers
 - Consistente weergave op alle geteste platforms
 
-## 📚 Leerdoelen & Toegepaste Vaardigheden
+## 💡 Speciale Functionaliteiten per Pagina
 
-Dit project demonstreert beheersing van meerdere front-end vaardigheden:
+### Homepage (index.html)
+- Hero-sectie met clublogo en welkomsttekst
+- Nieuwsberichten met datum en afbeeldingen
+- Responsieve wedstrijdkalender met komende wedstrijden
+- Sponsorsectie met links
 
-### HTML Beheersing
-- Correct gebruik van semantische HTML5-elementen (header, nav, main, section, footer)
-- Goed gestructureerde documentopbouw en hiërarchie
-- Formuliervalidatie en -opmaak met relevante veldtypen
-- Tabellen voor gestructureerde data (wedstrijdkalender)
-- Correcte integratie van externe bronnen (Font Awesome)
+### Over Ons (over-ons.html)
+- Clubgeschiedenis met tijdlijn
+- Team-informatie met foto's
+- Filosofie en kernwaarden
+- Historische mijlpalen
 
-### CSS Expertise
-- Geavanceerde selectors en specificiteitsbeheer
-- CSS-variabelen (custom properties) voor consistente styling
-- Flexbox voor één-dimensionale layouts
-- CSS Grid voor complexe twee-dimensionale layouts
-- Responsieve media queries op meerdere breekpunten
-- Effectieve CSS-organisatie met commentaar en secties
-- CSS-animaties en -transities voor visuele feedback
+### Fotogalerij (fotos.html)
+- Responsief grid-systeem voor alle afbeeldingen
+- Categorieën: Wedstrijden, Events, Team
+- Overlay met informatie bij hover
+- Popup-weergave bij klikken met CSS-animaties
 
-### Responsief Design
-- Mobile-first benadering met progressieve verbetering
-- Adaptieve layouts die zich aanpassen aan diverse schermformaten
-- Responsieve typografie en afbeeldingen
-- Efficiënt ruimtegebruik op kleinere schermen
+### Contact (contact.html)
+- Interactief contactformulier met validatie
+- Ingebedde locatiekaart
+- Contactgegevens met iconen
+- Links naar sociale media
 
-### UI/UX Principes
-- Consistente visuele taal door de hele website
-- Intuïtieve navigatie en gebruikersinterface
-- Effectieve visuele hiërarchie en informatiestructuur
-- Toepassing van CRAP-principes in alle aspecten van het ontwerp
-- Gebruiksvriendelijke interactieve elementen (formulieren, fotogalerij)
+## 📚 Geleerde Technieken
+
+Dit project toont beheersing van:
+
+- **CSS Grid & Flexbox** voor complexe layouts
+- **CSS Custom Properties** voor een onderhoudbaar stylesheet-systeem
+- **Media Queries** voor verschillende apparaten
+- **Mobile-first aanpak** met progressieve verbetering
+- **CSS-animaties en -transities** voor interactieve elementen
+- **Toegankelijkheidsprincipes** voor een inclusieve gebruikerservaring
 
 ## 🏆 Over de Club
 
@@ -200,11 +183,28 @@ Een interactieve fotogalerij met afbeeldingen van wedstrijden, teamfoto's en clu
 ### Contact (contact.html)
 Een contactpagina met contactgegevens, een formulier voor bezoekers en een kaart met de locatie van het clubterrein.
 
-## 📝 Contactgegevens
+## 📝 Contactgegevens Club
 
+- **Naam**: Sportvriend Hechtel
 - **Adres**: Hoefstraat 4, 3940 Hechtel
 - **Email**: info@sportvriend-hechtel.be
 - **Telefoon**: 0470 12 34 56
+
+## 🚀 Installatie & Gebruik
+
+### Lokaal bekijken
+1. Clone of download de repository:
+   ```
+   git clone https://github.com/yourusername/sportvriend-hechtel-site.git
+   ```
+2. Open de map en dubbelklik op `index.html` of open deze in uw favoriete browser
+3. Navigeer door de site via het hoofdmenu
+
+### Hosting
+Deze statische website kan worden gehost op elke webserver of gratis hosting platforms zoals:
+- GitHub Pages
+- Netlify
+- Vercel
 
 ---
 
