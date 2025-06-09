@@ -591,6 +591,59 @@ nav a:hover, nav a.active {
     text-decoration: none;
 }
 
+/* Simple layout styles */
+.simple-layout {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.header-section {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.header-section h2 {
+    font-size: 1.8rem;
+    color: var(--primary);
+    font-weight: 500;
+}
+
+/* Table styles */
+.table-container {
+    overflow-x: auto;
+    margin-bottom: 1.5rem;
+}
+
+.match-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+}
+
+.match-table th {
+    background-color: var(--primary);
+    color: white;
+    font-weight: 600;
+    padding: 0.75rem;
+    text-align: left;
+}
+
+.match-table td {
+    padding: 0.75rem;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.match-table tbody tr:hover {
+    background-color: #f5f5f5;
+}
+
+/* Icon styles */
+.fa-calendar-alt, .fa-handshake, .fa-home {
+    margin-right: 0.5rem;
+    color: var(--secondary);
+}
+
 .contact-info-list {
     list-style: none;
     display: flex;

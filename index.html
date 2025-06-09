@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sportvriend Hechtel - Voetbalclub</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="intro.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body>
@@ -22,71 +24,58 @@
         </nav>
     </header>
     <main>
-        <section class="hero">
-            <div class="hero-content">
-                <h2>Welkom bij Sportvriend Hechtel</h2>
-                <p>Voetbal, vriendschap en plezier in het hart van Limburg</p>
-                <a href="contact.html" class="cta-button">Word lid</a>
-            </div>
-        </section>
-
         <section class="about-container">
-            <section class="about-section">
-                <h2>Komende wedstrijden</h2>
-                <div class="matches-container">
-                    <div class="match-item">
-                        <div class="match-date">
-                            <span class="day">12</span>
-                            <span class="month">JUN</span>
-                        </div>
-                        <div class="match-teams">
-                            <span class="team home">Sportvriend Hechtel</span>
-                            <span class="versus">vs</span>
-                            <span class="team away">FC Overpelt</span>
-                        </div>
-                        <div class="match-info">
-                            <span class="time">20:00</span>
-                            <span class="location">Thuiswedstrijd</span>
-                        </div>
-                    </div>
 
-                    <div class="match-item">
-                        <div class="match-date">
-                            <span class="day">19</span>
-                            <span class="month">JUN</span>
-                        </div>
-                        <div class="match-teams">
-                            <span class="team home">SK Peer</span>
-                            <span class="versus">vs</span>
-                            <span class="team away">Sportvriend Hechtel</span>
-                        </div>
-                        <div class="match-info">
-                            <span class="time">15:00</span>
-                            <span class="location">Uitwedstrijd</span>
-                        </div>
-                    </div>
-
-                    <div class="match-item">
-                        <div class="match-date">
-                            <span class="day">26</span>
-                            <span class="month">JUN</span>
-                        </div>
-                        <div class="match-teams">
-                            <span class="team home">Sportvriend Hechtel</span>
-                            <span class="versus">vs</span>
-                            <span class="team away">Lommel United</span>
-                        </div>
-                        <div class="match-info">
-                            <span class="time">19:30</span>
-                            <span class="location">Thuiswedstrijd</span>
-                        </div>
-                    </div>
+            <section class="about-section intro-section">
+                <h3><i class="fas fa-home"></i> Welkom</h3>
+                <div class="intro-content">
+                    <p class="intro-text">Van harte welkom op de officiële website van Sportvriend Hechtel!</p>
+                    <p>Wij zijn een gezellige veteranenploeg uit het hart van Hechtel, waar voetbal, vriendschap en plezier centraal staan. Op deze site vind je alles over onze club: van informatie over onze ploeg en wedstrijden tot foto's, contactgegevens en meer.</p>
                 </div>
-                <a href="#" class="view-all-button">Bekijk alle wedstrijden</a>
             </section>
 
             <section class="about-section">
-                <h2>Onze sponsors</h2>
+                <h3><i class="fas fa-calendar-alt"></i> Wedstrijdkalender</h3>
+                <div class="table-container">
+                    <table class="match-table">
+                        <thead>
+                            <tr>
+                                <th>Datum</th>
+                                <th>Thuisploeg</th>
+                                <th>Uitploeg</th>
+                                <th>Tijd</th>
+                                <th>Locatie</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>12 Jun 2025</td>
+                                <td>Sportvriend Hechtel</td>
+                                <td>FC Overpelt</td>
+                                <td>20:00</td>
+                                <td>Thuiswedstrijd</td>
+                            </tr>
+                            <tr>
+                                <td>19 Jun 2025</td>
+                                <td>SK Peer</td>
+                                <td>Sportvriend Hechtel</td>
+                                <td>15:00</td>
+                                <td>Uitwedstrijd</td>
+                            </tr>
+                            <tr>
+                                <td>26 Jun 2025</td>
+                                <td>Sportvriend Hechtel</td>
+                                <td>Lommel United</td>
+                                <td>19:30</td>
+                                <td>Thuiswedstrijd</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section class="about-section">
+                <h3><i class="fas fa-handshake"></i> Onze sponsors</h3>
                 <div class="sponsors-grid">
                     <a href="https://vastgoedc.be/" target="_blank" rel="noopener">
                         <div class="sponsor"><img src="img/sponsor-vastgoed-c.jpg" alt="Vastgoed C"></div>
@@ -95,7 +84,6 @@
                         <div class="sponsor"><img src="img/sponsor-woutim_combi11.png" alt="Woutim"></div>
                     </a>
                 </div>
-                <a href="contact.html#sponsor" class="sponsor-cta">Word sponsor</a>
             </section>
         </section>
     </main>

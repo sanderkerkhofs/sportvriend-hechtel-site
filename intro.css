@@ -1,0 +1,15 @@
+/* Intro section specific styles */
+.intro-section {
+    margin-bottom: var(--spacing-md);
+}
+
+.intro-content {
+    line-height: 1.7;
+}
+
+.intro-text {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--primary);
+    margin-bottom: var(--spacing-sm);
+}
