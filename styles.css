@@ -127,7 +127,7 @@ section:last-child {
 }
 
 /* Buttons */
-.cta-button, .submit-button, .view-all-button, .sponsor-cta {
+.submit-button, .sponsor-cta {
     display: inline-block;
     background-color: var(--primary);
     color: var(--text-light);
@@ -141,20 +141,17 @@ section:last-child {
     cursor: pointer;
 }
 
-.cta-button:hover, .submit-button:hover, .view-all-button:hover {
+.submit-button:hover {
     background-color: var(--primary-light);
     transform: translateY(-2px);
     color: var(--text-light);
 }
 
-.view-all-button, .sponsor-cta {
+.sponsor-cta {
     margin: var(--spacing-md) auto 0;
     display: block;
     text-align: center;
     max-width: 300px;
-}
-
-.sponsor-cta {
     background-color: var(--secondary);
     color: var(--text-dark);
     padding: var(--spacing-xs) var(--spacing-md);
@@ -203,62 +200,8 @@ nav a:hover, nav a.active {
     background-color: var(--primary-light);
 }
 
-/* HERO SECTION */
-.hero {
-    background-color: var(--gray-medium);
-    background-image: url('img/seizoen2020.jpg');
-    text-align: center;
-    padding: var(--spacing-xl) var(--spacing-md);
-    margin-bottom: var(--spacing-lg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative;
-}
-
-.hero::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 1;
-}
-
-.hero-content {
-    position: relative;
-    z-index: 2;
-    color: var(--text-light);
-}
-
-.hero h2 {
-    font-size: 2.5rem;
-    margin-bottom: var(--spacing-sm);
-    color: var(--text-light);
-    position: relative;
-    z-index: 2;
-}
-
-.hero p {
-    font-size: 1.3rem;
-    max-width: 600px;
-    margin: 0 auto var(--spacing-md);
-    color: var(--text-light);
-    position: relative;
-    z-index: 2;
-}
-
-/* NEWS SECTION */
-.announcements {
-    background-color: white;
-    padding: var(--spacing-lg) var(--spacing-sm);
-    text-align: center;
-}
-
 /* GRID LAYOUTS */
-.news-container, .matches-container, .sponsors-grid {
+.sponsors-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: var(--spacing-md);
@@ -266,120 +209,7 @@ nav a:hover, nav a.active {
     margin: 0 auto;
 }
 
-/* NEWS ITEMS */
-.news-item {
-    background: var(--gray-light);
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-}
-
-.news-item:hover {
-    transform: translateY(-5px);
-}
-
-.news-item img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-}
-
-.news-content {
-    padding: var(--spacing-sm);
-    text-align: left;
-}
-
-.news-date {
-    color: var(--gray-dark);
-    font-size: 0.9rem;
-    margin-bottom: var(--spacing-xs);
-}
-
-.read-more {
-    display: inline-block;
-    margin-top: var(--spacing-xs);
-    font-weight: 600;
-}
-
-/* MATCHES SECTION */
-.upcoming-matches {
-    background-color: var(--primary);
-    color: var(--text-light);
-    padding: var(--spacing-lg) var(--spacing-sm);
-    text-align: center;
-}
-
-.match-item {
-    background: var(--primary);
-    color: var(--text-light);
-    border-radius: 8px;
-    padding: var(--spacing-md);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.match-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-}
-
-.match-date {
-    text-align: center;
-    margin-bottom: var(--spacing-sm);
-}
-
-.match-date .day {
-    font-size: 2rem;
-    font-weight: bold;
-    display: block;
-}
-
-.match-date .month {
-    font-size: 1rem;
-    text-transform: uppercase;
-    display: block;
-}
-
-.match-teams {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: var(--spacing-sm);
-}
-
-.team {
-    font-weight: bold;
-    font-size: 1.1rem;
-}
-
-.versus {
-    margin: var(--spacing-xs) 0;
-    font-weight: normal;
-    color: var(--secondary);
-}
-
-.match-info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.time, .location {
-    display: block;
-}
-
 /* SPONSORS SECTION */
-.sponsors {
-    background-color: white;
-    padding: var(--spacing-lg) var(--spacing-sm);
-    text-align: center;
-}
-
 .sponsor {
     display: flex;
     align-items: center;
@@ -567,56 +397,9 @@ footer {
     padding: var(--spacing-lg) var(--spacing-sm) var(--spacing-md);
 }
 
-.footer-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    max-width: var(--container-width);
-    margin: 0 auto var(--spacing-md);
-    gap: var(--spacing-md);
-}
-
-.footer-section {
-    flex: 1;
-    min-width: 200px;
-}
-
-.footer-section h3 {
-    color: var(--secondary);
-    margin-bottom: var(--spacing-sm);
-}
-
-.footer-section ul {
-    list-style: none;
-}
-
-.footer-section ul li {
-    margin-bottom: var(--spacing-xs);
-}
-
-.footer-section a {
-    color: var(--text-light);
-}
-
-.footer-section a:hover {
-    color: var(--secondary);
-}
-
-.social-icons {
-    display: flex;
-    gap: var(--spacing-sm);
-}
-
-.social-icon {
-    padding: var(--spacing-xs);
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 4px;
-}
-
 .copyright {
     text-align: center;
     padding-top: var(--spacing-md);
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
     font-size: 0.9rem;
 }
 
@@ -643,10 +426,6 @@ footer {
         padding: var(--spacing-xs) var(--spacing-md);
     }
     
-    .contact-grid {
-        grid-template-columns: 1fr;
-    }
-    
     .about-container {
         padding: var(--spacing-md) var(--spacing-xs);
     }
@@ -661,15 +440,7 @@ footer {
         padding: var(--spacing-md) var(--spacing-sm);
     }
     
-    .hero {
-        padding: var(--spacing-lg) var(--spacing-sm);
-    }
-    
-    .hero h2 {
-        font-size: 2rem;
-    }
-    
-    .news-container, .matches-container, .sponsors-grid {
+    .sponsors-grid {
         grid-template-columns: 1fr;
     }
     
