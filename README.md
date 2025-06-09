@@ -7,7 +7,7 @@
 Deze website werd ontwikkeld als onderdeel van de cursus **Front-End Development** aan **UCLL**. Het betreft een statische website voor de lokale voetbalclub "Sportvriend Hechtel" uit Limburg, België. De site biedt informatie over de club, het team, activiteiten, wedstrijden en contactmogelijkheden.
 
 ### Schoolopdracht Context
-
+ 
 Dit project werd gemaakt als onderdeel van Opdracht 2 voor het vak Front-End Development (Semester 2). De opdracht vereiste het ontwikkelen van een volledig responsieve, statische website met minimaal vier pagina's, zonder gebruik van frameworks, met toegepaste moderne CSS-technieken.
 
 ## 🚀 Functies
