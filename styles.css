@@ -568,6 +568,29 @@ nav a:hover, nav a.active {
     margin-right: var(--spacing-xs);
 }
 
+/* Contact list styling */
+.contact-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contact-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5em;
+}
+
+.contact-list .icon-container {
+    font-size: 1.3em;
+    margin-right: 0.7em;
+}
+
+.contact-list a {
+    color: inherit;
+    text-decoration: none;
+}
+
 .contact-info-list {
     list-style: none;
     display: flex;

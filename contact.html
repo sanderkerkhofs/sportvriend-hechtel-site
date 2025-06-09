@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact - Sportvriend Hechtel</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body>
@@ -24,82 +25,23 @@
     <main>
         <section class="about-container">
             <h2>Contact</h2>
-            
+
             <section class="about-section">
                 <h3>Contactgegevens</h3>
-                <div class="contact-grid">
-                    <div class="contact-card">
-                        <h4>Adres</h4>
-                        <p>Hoefstraat 4<br>3940 Hechtel</p>
-                    </div>
-                    <div class="contact-card">
-                        <h4>Telefoon</h4>
-                        <p>0470 12 34 56</p>
-                    </div>
-                    <div class="contact-card">
-                        <h4>E-mail</h4>
-                        <p>info@sportvriend-hechtel.be</p>
-                    </div>
-                    <div class="contact-card">
-                        <h4>Openingsuren</h4>
-                        <p>Woensdag: 14:00 - 21:00<br>
-                            Vrijdag: 19:00 - 23:00<br>
-                            Weekend: 09:00 - 23:00</p>
-                    </div>
-                </div>
-            </section>
-
-            <section class="about-section" id="contacteer-ons">
-                <h3>Contactformulier</h3>
-                <p>Heb je een vraag of wil je lid worden? Vul onderstaand formulier in en we nemen zo snel mogelijk contact
-                    met je op.</p>
-
-                <div class="contact-form-container">
-                    <form class="contact-form">
-                        <div class="form-group">
-                            <label for="name">Naam*</label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
-    
-                        <div class="form-group">
-                            <label for="email">E-mailadres*</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-    
-                        <div class="form-group">
-                            <label for="phone">Telefoonnummer</label>
-                            <input type="tel" id="phone" name="phone">
-                        </div>
-    
-                        <div class="form-group">
-                            <label for="subject">Onderwerp*</label>
-                            <select id="subject" name="subject" required>
-                                <option value="">Selecteer een onderwerp</option>
-                                <option value="lid-worden">Lid worden</option>
-                                <option value="vrijwilliger">Vrijwilliger worden</option>
-                                <option value="sponsor">Sponsor worden</option>
-                                <option value="vraag">Algemene vraag</option>
-                                <option value="anders">Anders</option>
-                            </select>
-                        </div>
-    
-                        <div class="form-group">
-                            <label for="message">Bericht*</label>
-                            <textarea id="message" name="message" rows="6" required></textarea>
-                        </div>
-    
-                        <div class="form-group checkbox-group">
-                            <input type="checkbox" id="privacy" name="privacy" required>
-                            <label for="privacy">Ik ga akkoord met de <a href="#">privacyvoorwaarden</a>*</label>
-                        </div>
-    
-                        <div class="form-submit">
-                            <button type="submit" class="submit-button">Verzenden</button>
-                        </div>
-    
-                        <p class="form-note">* Verplichte velden</p>
-                    </form>
-                </div>
+                <ul class="contact-list">
+                    <li>
+                        <span class="icon-container"><i class="fas fa-map-marker-alt"></i></span>
+                        <span>Hoefstraat 4, 3940 Hechtel</span>
+                    </li>
+                    <li>
+                        <span class="icon-container"><i class="fas fa-phone-alt"></i></span>
+                        <span>0470 12 34 56</span>
+                    </li>
+                    <li>
+                        <span class="icon-container"><i class="fas fa-envelope"></i></span>
+                        <span><a href="mailto:info@sportvriend-hechtel.be">info@sportvriend-hechtel.be</a></span>
+                    </li>
+                </ul>
             </section>
 
             <section class="about-section">
@@ -115,40 +57,76 @@
                         <p><strong>Routebeschrijving</strong></p>
                         <div class="directions-content">
                             <p>
-                                <span class="direction-icon">🚗</span> Sportvriend Hechtel ligt vlak bij de N715. Neem afrit Resterheide, volg de Resterheidestraat en je ziet de voetbalvelden aan de rechterkant.
+                                <span class="direction-icon"><i class="fas fa-car"></i></span> Sportvriend Hechtel ligt vlak bij de N715. Neem
+                                afrit Resterheide, volg de Resterheidestraat en je ziet de voetbalvelden aan de
+                                rechterkant.
                             </p>
                             <p>
-                                <span class="direction-icon">🅿️</span> Gratis parking is beschikbaar aan het terrein.
+                                <span class="direction-icon"><i class="fas fa-parking"></i></span> Gratis parking is beschikbaar aan het terrein.
                             </p>
                         </div>
                     </div>
                 </div>
             </section>
+
+            
+            <section class="about-section" id="contacteer-ons">
+                <h3>Contactformulier</h3>
+                <p>Heb je een vraag of wil je lid worden? Vul onderstaand formulier in en we nemen zo snel mogelijk
+                    contact
+                    met je op.</p>
+
+                <div class="contact-form-container">
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Naam*</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">E-mailadres*</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Telefoonnummer</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Onderwerp*</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Selecteer een onderwerp</option>
+                                <option value="lid-worden">Lid worden</option>
+                                <option value="vrijwilliger">Vrijwilliger worden</option>
+                                <option value="sponsor">Sponsor worden</option>
+                                <option value="vraag">Algemene vraag</option>
+                                <option value="anders">Anders</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Bericht*</label>
+                            <textarea id="message" name="message" rows="6" required></textarea>
+                        </div>
+
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="privacy" name="privacy" required>
+                            <label for="privacy">Ik ga akkoord met de <a href="#">privacyvoorwaarden</a>*</label>
+                        </div>
+
+                        <div class="form-submit">
+                            <button type="submit" class="submit-button">Verzenden</button>
+                        </div>
+
+                        <p class="form-note">* Verplichte velden</p>
+                    </form>
+                </div>
+            </section>
+
         </section>
     </main>
     <footer>
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3>Contact</h3>
-                <p>Hoefstraat 4<br>3940 Hechtel<br>info@sportvriend-hechtel.be<br>0470 12 34 56</p>
-            </div>
-            <div class="footer-section">
-                <h3>Links</h3>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="over-ons.html">Over ons</a></li>
-                    <li><a href="fotos.html">Foto's</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h3>Volg ons</h3>
-                <div class="social-icons">
-                    <a href="#" class="social-icon">Facebook</a>
-                    <a href="#" class="social-icon">Instagram</a>
-                </div>
-            </div>
-        </div>
         <p class="copyright">&copy; 2025 Sportvriend Hechtel. Alle rechten voorbehouden.</p>
     </footer>
 </body>
