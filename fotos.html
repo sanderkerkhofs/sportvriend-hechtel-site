@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Foto's - Sportvriend Hechtel</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="gallery.css">
 </head>
 <body>
     <header>
@@ -22,114 +23,283 @@
     <main>
         <section class="about-container">
             <h2>Foto's</h2>
-            <p class="intro-text">Bekijk de mooiste momenten van Sportvriend Hechtel</p>
-            
-            <section class="about-section">
-                <h3>Albums</h3>
-                <ul class="album-filter">
-                    <li><button class="active" data-filter="all">Alle foto's</button></li>
-                    <li><button data-filter="wedstrijden">Wedstrijden</button></li>
-                    <li><button data-filter="trainingen">Trainingen</button></li>
-                    <li><button data-filter="events">Clubactiviteiten</button></li>
-                </ul>
-            </section>
-            
+
             <section class="about-section">
                 <h3>Fotogalerij</h3>
                 <div class="gallery-grid">
                     <div class="gallery-item" data-category="wedstrijden">
-                        <img src="img/match1.jpg" alt="Wedstrijd tegen FC Overpelt">
-                        <div class="gallery-caption">
-                            <h4>Thuiswedstrijd tegen FC Overpelt</h4>
-                            <p>12 maart 2025</p>
+                        <a href="#popup-1">
+                            <img src="img/match1.jpg" alt="Wedstrijd tegen FC Overpelt">
+                            <div class="gallery-caption">
+                                <h4>Thuiswedstrijd tegen FC Overpelt</h4>
+                                <p>12 maart 2025</p>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <!-- Popup for this image -->
+                    <div id="popup-1" class="popup-gallery">
+                        <a href="#" class="popup-background"></a>
+                        <div class="popup-content">
+                            <a href="#" class="popup-close">&times;</a>
+                            <img src="img/match1.jpg" alt="Wedstrijd tegen FC Overpelt" class="popup-image">
+                            <div class="popup-caption">
+                                <h4>Thuiswedstrijd tegen FC Overpelt</h4>
+                                <p>12 maart 2025</p>
+                            </div>
                         </div>
                     </div>
                     
                     <div class="gallery-item" data-category="wedstrijden">
-                        <img src="img/match2.jpg" alt="Uitwedstrijd tegen SK Peer">
-                        <div class="gallery-caption">
-                            <h4>Uitwedstrijd tegen SK Peer</h4>
-                            <p>26 februari 2025</p>
+                        <a href="#popup-2">
+                            <img src="img/match2.jpg" alt="Uitwedstrijd tegen SK Peer">
+                            <div class="gallery-caption">
+                                <h4>Uitwedstrijd tegen SK Peer</h4>
+                                <p>26 februari 2025</p>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <!-- Popup for this image -->
+                    <div id="popup-2" class="popup-gallery">
+                        <a href="#" class="popup-background"></a>
+                        <div class="popup-content">
+                            <a href="#" class="popup-close">&times;</a>
+                            <img src="img/match2.jpg" alt="Uitwedstrijd tegen SK Peer" class="popup-image">
+                            <div class="popup-caption">
+                                <h4>Uitwedstrijd tegen SK Peer</h4>
+                                <p>26 februari 2025</p>
+                            </div>
                         </div>
                     </div>
                     
                     <div class="gallery-item" data-category="trainingen">
-                        <img src="img/seizoen2020.jpg" alt="Jeugdtraining">
-                        <div class="gallery-caption">
-                            <h4>Jeugdtraining U12</h4>
-                            <p>15 maart 2025</p>
+                        <a href="#popup-3">
+                            <img src="img/seizoen2020.jpg" alt="Jeugdtraining">
+                            <div class="gallery-caption">
+                                <h4>Jeugdtraining U12</h4>
+                                <p>15 maart 2025</p>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <!-- Popup for this image -->
+                    <div id="popup-3" class="popup-gallery">
+                        <a href="#" class="popup-background"></a>
+                        <div class="popup-content">
+                            <a href="#" class="popup-close">&times;</a>
+                            <img src="img/seizoen2020.jpg" alt="Jeugdtraining" class="popup-image">
+                            <div class="popup-caption">
+                                <h4>Jeugdtraining U12</h4>
+                                <p>15 maart 2025</p>
+                            </div>
                         </div>
                     </div>
                     
                     <div class="gallery-item" data-category="events">
-                        <img src="img/kerstmarkt1.jpg" alt="Nieuwjaarsreceptie">
-                        <div class="gallery-caption">
-                            <h4>Nieuwjaarsreceptie 2025</h4>
-                            <p>10 januari 2025</p>
+                        <a href="#popup-4">
+                            <img src="img/kerstmarkt1.jpg" alt="Nieuwjaarsreceptie">
+                            <div class="gallery-caption">
+                                <h4>Nieuwjaarsreceptie 2025</h4>
+                                <p>10 januari 2025</p>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <!-- Popup for this image -->
+                    <div id="popup-4" class="popup-gallery">
+                        <a href="#" class="popup-background"></a>
+                        <div class="popup-content">
+                            <a href="#" class="popup-close">&times;</a>
+                            <img src="img/kerstmarkt1.jpg" alt="Nieuwjaarsreceptie" class="popup-image">
+                            <div class="popup-caption">
+                                <h4>Nieuwjaarsreceptie 2025</h4>
+                                <p>10 januari 2025</p>
+                            </div>
                         </div>
                     </div>
                     
                     <div class="gallery-item" data-category="wedstrijden">
-                        <img src="img/ploeg-opstelling.jpg" alt="Wedstrijd tegen Lommel">
-                        <div class="gallery-caption">
-                            <h4>Bekerwedstrijd tegen Lommel</h4>
-                            <p>5 februari 2025</p>
+                        <a href="#popup-5">
+                            <img src="img/ploeg-opstelling.jpg" alt="Wedstrijd tegen Lommel">
+                            <div class="gallery-caption">
+                                <h4>Bekerwedstrijd tegen Lommel</h4>
+                                <p>5 februari 2025</p>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <!-- Popup for this image -->
+                    <div id="popup-5" class="popup-gallery">
+                        <a href="#" class="popup-background"></a>
+                        <div class="popup-content">
+                            <a href="#" class="popup-close">&times;</a>
+                            <img src="img/ploeg-opstelling.jpg" alt="Wedstrijd tegen Lommel" class="popup-image">
+                            <div class="popup-caption">
+                                <h4>Bekerwedstrijd tegen Lommel</h4>
+                                <p>5 februari 2025</p>
+                            </div>
                         </div>
                     </div>
                     
                     <div class="gallery-item" data-category="trainingen">
-                        <img src="img/seizoen2018.jpg" alt="Keeperstraining">
-                        <div class="gallery-caption">
-                            <h4>Keeperstraining</h4>
-                            <p>20 maart 2025</p>
+                        <a href="#popup-6">
+                            <img src="img/seizoen2018.jpg" alt="Keeperstraining">
+                            <div class="gallery-caption">
+                                <h4>Keeperstraining</h4>
+                                <p>20 maart 2025</p>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <!-- Popup for this image -->
+                    <div id="popup-6" class="popup-gallery">
+                        <a href="#" class="popup-background"></a>
+                        <div class="popup-content">
+                            <a href="#" class="popup-close">&times;</a>
+                            <img src="img/seizoen2018.jpg" alt="Keeperstraining" class="popup-image">
+                            <div class="popup-caption">
+                                <h4>Keeperstraining</h4>
+                                <p>20 maart 2025</p>
+                            </div>
                         </div>
                     </div>
                     
                     <div class="gallery-item" data-category="events">
-                        <img src="img/BBQ2.JPG" alt="BBQ">
-                        <div class="gallery-caption">
-                            <h4>Jaarlijkse club-BBQ</h4>
-                            <p>12 juni 2024</p>
+                        <a href="#popup-7">
+                            <img src="img/BBQ2.JPG" alt="BBQ">
+                            <div class="gallery-caption">
+                                <h4>Jaarlijkse club-BBQ</h4>
+                                <p>12 juni 2024</p>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <!-- Popup for this image -->
+                    <div id="popup-7" class="popup-gallery">
+                        <a href="#" class="popup-background"></a>
+                        <div class="popup-content">
+                            <a href="#" class="popup-close">&times;</a>
+                            <img src="img/BBQ2.JPG" alt="BBQ" class="popup-image">
+                            <div class="popup-caption">
+                                <h4>Jaarlijkse club-BBQ</h4>
+                                <p>12 juni 2024</p>
+                            </div>
                         </div>
                     </div>
                     
                     <div class="gallery-item" data-category="events">
-                        <img src="img/seizoen2014.jpg" alt="Kampioensviering">
-                        <div class="gallery-caption">
-                            <h4>Kampioensviering U15</h4>
-                            <p>30 mei 2024</p>
+                        <a href="#popup-8">
+                            <img src="img/seizoen2014.jpg" alt="Kampioensviering">
+                            <div class="gallery-caption">
+                                <h4>Kampioensviering U15</h4>
+                                <p>30 mei 2024</p>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <!-- Popup for this image -->
+                    <div id="popup-8" class="popup-gallery">
+                        <a href="#" class="popup-background"></a>
+                        <div class="popup-content">
+                            <a href="#" class="popup-close">&times;</a>
+                            <img src="img/seizoen2014.jpg" alt="Kampioensviering" class="popup-image">
+                            <div class="popup-caption">
+                                <h4>Kampioensviering U15</h4>
+                                <p>30 mei 2024</p>
+                            </div>
                         </div>
                     </div>
                     
                     <div class="gallery-item" data-category="wedstrijden">
-                        <img src="img/toernoei-mille-1.jpg" alt="Promotiewedstrijd">
-                        <div class="gallery-caption">
-                            <h4>Promotiewedstrijd</h4>
-                            <p>15 mei 2025</p>
+                        <a href="#popup-9">
+                            <img src="img/toernoei-mille-1.jpg" alt="Promotiewedstrijd">
+                            <div class="gallery-caption">
+                                <h4>Promotiewedstrijd</h4>
+                                <p>15 mei 2025</p>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <!-- Popup for this image -->
+                    <div id="popup-9" class="popup-gallery">
+                        <a href="#" class="popup-background"></a>
+                        <div class="popup-content">
+                            <a href="#" class="popup-close">&times;</a>
+                            <img src="img/toernoei-mille-1.jpg" alt="Promotiewedstrijd" class="popup-image">
+                            <div class="popup-caption">
+                                <h4>Promotiewedstrijd</h4>
+                                <p>15 mei 2025</p>
+                            </div>
                         </div>
                     </div>
                     
                     <div class="gallery-item" data-category="trainingen">
-                        <img src="img/uitstap2.jpg" alt="Teamtraining">
-                        <div class="gallery-caption">
-                            <h4>Teamtraining eerste elftal</h4>
-                            <p>22 maart 2025</p>
+                        <a href="#popup-10">
+                            <img src="img/uitstap2.jpg" alt="Teamtraining">
+                            <div class="gallery-caption">
+                                <h4>Teamtraining eerste elftal</h4>
+                                <p>22 maart 2025</p>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <!-- Popup for this image -->
+                    <div id="popup-10" class="popup-gallery">
+                        <a href="#" class="popup-background"></a>
+                        <div class="popup-content">
+                            <a href="#" class="popup-close">&times;</a>
+                            <img src="img/uitstap2.jpg" alt="Teamtraining" class="popup-image">
+                            <div class="popup-caption">
+                                <h4>Teamtraining eerste elftal</h4>
+                                <p>22 maart 2025</p>
+                            </div>
                         </div>
                     </div>
                     
                     <div class="gallery-item" data-category="events">
-                        <img src="img/toernoei-mille-2.jpg" alt="Sinterklaasfeest">
-                        <div class="gallery-caption">
-                            <h4>Sinterklaasfeest jeugd</h4>
-                            <p>4 december 2024</p>
+                        <a href="#popup-11">
+                            <img src="img/toernoei-mille-2.jpg" alt="Sinterklaasfeest">
+                            <div class="gallery-caption">
+                                <h4>Sinterklaasfeest jeugd</h4>
+                                <p>4 december 2024</p>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <!-- Popup for this image -->
+                    <div id="popup-11" class="popup-gallery">
+                        <a href="#" class="popup-background"></a>
+                        <div class="popup-content">
+                            <a href="#" class="popup-close">&times;</a>
+                            <img src="img/toernoei-mille-2.jpg" alt="Sinterklaasfeest" class="popup-image">
+                            <div class="popup-caption">
+                                <h4>Sinterklaasfeest jeugd</h4>
+                                <p>4 december 2024</p>
+                            </div>
                         </div>
                     </div>
                     
                     <div class="gallery-item" data-category="wedstrijden">
-                        <img src="img/toernoei-mille-3.jpg" alt="Derby">
-                        <div class="gallery-caption">
-                            <h4>Derby tegen buren</h4>
-                            <p>1 april 2025</p>
+                        <a href="#popup-12">
+                            <img src="img/toernoei-mille-3.jpg" alt="Derby">
+                            <div class="gallery-caption">
+                                <h4>Derby tegen buren</h4>
+                                <p>1 april 2025</p>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <!-- Popup for this image -->
+                    <div id="popup-12" class="popup-gallery">
+                        <a href="#" class="popup-background"></a>
+                        <div class="popup-content">
+                            <a href="#" class="popup-close">&times;</a>
+                            <img src="img/toernoei-mille-3.jpg" alt="Derby" class="popup-image">
+                            <div class="popup-caption">
+                                <h4>Derby tegen buren</h4>
+                                <p>1 april 2025</p>
+                            </div>
                         </div>
                     </div>
                 </div>
